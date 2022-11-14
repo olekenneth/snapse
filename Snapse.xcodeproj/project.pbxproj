@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4FC6FA1C29229E3E000D5539 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC6FA1B29229E3E000D5539 /* ImageView.swift */; };
+		4FECC29429222206005482E4 /* SnapseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECC29329222206005482E4 /* SnapseApp.swift */; };
+		4FECC29629222206005482E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECC29529222206005482E4 /* ContentView.swift */; };
+		4FECC29829222207005482E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FECC29729222207005482E4 /* Assets.xcassets */; };
+		4FECC29B29222207005482E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FECC29A29222207005482E4 /* Preview Assets.xcassets */; };
+		4FECC2A529222208005482E4 /* SnapseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECC2A429222208005482E4 /* SnapseTests.swift */; };
+		4FECC2AF29222208005482E4 /* SnapseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECC2AE29222208005482E4 /* SnapseUITests.swift */; };
+		4FECC2B129222208005482E4 /* SnapseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECC2B029222208005482E4 /* SnapseUITestsLaunchTests.swift */; };
+		4FECC2C329222319005482E4 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECC2C229222319005482E4 /* CameraView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4FECC2A129222208005482E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FECC28829222205005482E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FECC28F29222206005482E4;
+			remoteInfo = Snapse;
+		};
+		4FECC2AB29222208005482E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FECC28829222205005482E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FECC28F29222206005482E4;
+			remoteInfo = Snapse;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4FC6FA1B29229E3E000D5539 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		4FECC29029222206005482E4 /* Snapse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snapse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FECC29329222206005482E4 /* SnapseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapseApp.swift; sourceTree = "<group>"; };
+		4FECC29529222206005482E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4FECC29729222207005482E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4FECC29A29222207005482E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4FECC2A029222208005482E4 /* SnapseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FECC2A429222208005482E4 /* SnapseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapseTests.swift; sourceTree = "<group>"; };
+		4FECC2AA29222208005482E4 /* SnapseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FECC2AE29222208005482E4 /* SnapseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapseUITests.swift; sourceTree = "<group>"; };
+		4FECC2B029222208005482E4 /* SnapseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4FECC2C229222319005482E4 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		4FECC2D1292296DB005482E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4FECC28D29222206005482E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FECC29D29222208005482E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FECC2A729222208005482E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4FECC28729222205005482E4 = {
+			isa = PBXGroup;
+			children = (
+				4FECC29229222206005482E4 /* Snapse */,
+				4FECC2A329222208005482E4 /* SnapseTests */,
+				4FECC2AD29222208005482E4 /* SnapseUITests */,
+				4FECC29129222206005482E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4FECC29129222206005482E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FECC29029222206005482E4 /* Snapse.app */,
+				4FECC2A029222208005482E4 /* SnapseTests.xctest */,
+				4FECC2AA29222208005482E4 /* SnapseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FECC29229222206005482E4 /* Snapse */ = {
+			isa = PBXGroup;
+			children = (
+				4FECC2D1292296DB005482E4 /* Info.plist */,
+				4FECC29929222207005482E4 /* Preview Content */,
+				4FECC29329222206005482E4 /* SnapseApp.swift */,
+				4FECC29529222206005482E4 /* ContentView.swift */,
+				4FECC29729222207005482E4 /* Assets.xcassets */,
+				4FECC2C229222319005482E4 /* CameraView.swift */,
+				4FC6FA1B29229E3E000D5539 /* ImageView.swift */,
+			);
+			path = Snapse;
+			sourceTree = "<group>";
+		};
+		4FECC29929222207005482E4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4FECC29A29222207005482E4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4FECC2A329222208005482E4 /* SnapseTests */ = {
+			isa = PBXGroup;
+			children = (
+				4FECC2A429222208005482E4 /* SnapseTests.swift */,
+			);
+			path = SnapseTests;
+			sourceTree = "<group>";
+		};
+		4FECC2AD29222208005482E4 /* SnapseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4FECC2AE29222208005482E4 /* SnapseUITests.swift */,
+				4FECC2B029222208005482E4 /* SnapseUITestsLaunchTests.swift */,
+			);
+			path = SnapseUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4FECC28F29222206005482E4 /* Snapse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FECC2B429222208005482E4 /* Build configuration list for PBXNativeTarget "Snapse" */;
+			buildPhases = (
+				4FECC28C29222206005482E4 /* Sources */,
+				4FECC28D29222206005482E4 /* Frameworks */,
+				4FECC28E29222206005482E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Snapse;
+			packageProductDependencies = (
+			);
+			productName = Snapse;
+			productReference = 4FECC29029222206005482E4 /* Snapse.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4FECC29F29222208005482E4 /* SnapseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FECC2B729222208005482E4 /* Build configuration list for PBXNativeTarget "SnapseTests" */;
+			buildPhases = (
+				4FECC29C29222208005482E4 /* Sources */,
+				4FECC29D29222208005482E4 /* Frameworks */,
+				4FECC29E29222208005482E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FECC2A229222208005482E4 /* PBXTargetDependency */,
+			);
+			name = SnapseTests;
+			productName = SnapseTests;
+			productReference = 4FECC2A029222208005482E4 /* SnapseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4FECC2A929222208005482E4 /* SnapseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FECC2BA29222208005482E4 /* Build configuration list for PBXNativeTarget "SnapseUITests" */;
+			buildPhases = (
+				4FECC2A629222208005482E4 /* Sources */,
+				4FECC2A729222208005482E4 /* Frameworks */,
+				4FECC2A829222208005482E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FECC2AC29222208005482E4 /* PBXTargetDependency */,
+			);
+			name = SnapseUITests;
+			productName = SnapseUITests;
+			productReference = 4FECC2AA29222208005482E4 /* SnapseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4FECC28829222205005482E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					4FECC28F29222206005482E4 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					4FECC29F29222208005482E4 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 4FECC28F29222206005482E4;
+					};
+					4FECC2A929222208005482E4 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 4FECC28F29222206005482E4;
+					};
+				};
+			};
+			buildConfigurationList = 4FECC28B29222205005482E4 /* Build configuration list for PBXProject "Snapse" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4FECC28729222205005482E4;
+			packageReferences = (
+			);
+			productRefGroup = 4FECC29129222206005482E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4FECC28F29222206005482E4 /* Snapse */,
+				4FECC29F29222208005482E4 /* SnapseTests */,
+				4FECC2A929222208005482E4 /* SnapseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4FECC28E29222206005482E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FECC29B29222207005482E4 /* Preview Assets.xcassets in Resources */,
+				4FECC29829222207005482E4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FECC29E29222208005482E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FECC2A829222208005482E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4FECC28C29222206005482E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FC6FA1C29229E3E000D5539 /* ImageView.swift in Sources */,
+				4FECC29629222206005482E4 /* ContentView.swift in Sources */,
+				4FECC29429222206005482E4 /* SnapseApp.swift in Sources */,
+				4FECC2C329222319005482E4 /* CameraView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FECC29C29222208005482E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FECC2A529222208005482E4 /* SnapseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FECC2A629222208005482E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FECC2B129222208005482E4 /* SnapseUITestsLaunchTests.swift in Sources */,
+				4FECC2AF29222208005482E4 /* SnapseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4FECC2A229222208005482E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FECC28F29222206005482E4 /* Snapse */;
+			targetProxy = 4FECC2A129222208005482E4 /* PBXContainerItemProxy */;
+		};
+		4FECC2AC29222208005482E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FECC28F29222206005482E4 /* Snapse */;
+			targetProxy = 4FECC2AB29222208005482E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4FECC2B229222208005482E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4FECC2B329222208005482E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4FECC2B529222208005482E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Snapse/Preview Content\"";
+				DEVELOPMENT_TEAM = XQ85U6R33U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Snapse/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need access to camera";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Need access to microphone";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adapptic.Snapse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4FECC2B629222208005482E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Snapse/Preview Content\"";
+				DEVELOPMENT_TEAM = XQ85U6R33U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Snapse/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need access to camera";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Need access to microphone";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adapptic.Snapse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4FECC2B829222208005482E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XQ85U6R33U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adapptic.SnapseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Snapse.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Snapse";
+			};
+			name = Debug;
+		};
+		4FECC2B929222208005482E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XQ85U6R33U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adapptic.SnapseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Snapse.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Snapse";
+			};
+			name = Release;
+		};
+		4FECC2BB29222208005482E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XQ85U6R33U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adapptic.SnapseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Snapse;
+			};
+			name = Debug;
+		};
+		4FECC2BC29222208005482E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XQ85U6R33U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adapptic.SnapseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Snapse;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FECC28B29222205005482E4 /* Build configuration list for PBXProject "Snapse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FECC2B229222208005482E4 /* Debug */,
+				4FECC2B329222208005482E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FECC2B429222208005482E4 /* Build configuration list for PBXNativeTarget "Snapse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FECC2B529222208005482E4 /* Debug */,
+				4FECC2B629222208005482E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FECC2B729222208005482E4 /* Build configuration list for PBXNativeTarget "SnapseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FECC2B829222208005482E4 /* Debug */,
+				4FECC2B929222208005482E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FECC2BA29222208005482E4 /* Build configuration list for PBXNativeTarget "SnapseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FECC2BB29222208005482E4 /* Debug */,
+				4FECC2BC29222208005482E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4FECC28829222205005482E4 /* Project object */;
+}
