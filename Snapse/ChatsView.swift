@@ -54,7 +54,7 @@ struct ChatsView: View {
                     Room(room: room)
                 }
             }
-        }.padding()
+        }
     }
 }
 
@@ -62,17 +62,22 @@ struct Room: View {
     var room: RoomModel
     
     var body: some View {
-        HStack {
+        HStack(alignment: .top, spacing: 10) {
             Rectangle()
                 .fill()
-                .clipShape(RoundedRectangle(cornerRadius: 5))
+                .clipShape(Circle())
                 .foregroundColor(room.unread ? Color.red : Color.black)
-                .frame(width: 30, height: 30)
-            Text(room.name)
-                .font(.system(size: 22))
+                .frame(width: 60, height: 60)
+                .padding([.leading, .bottom])
+            VStack(alignment: .leading) {
+                Text(room.name)
+                    .font(.system(size: 32))
+                Text(room.name)
+                    .font(.system(size: 16))
+            }
             Spacer()
         }
-
+        .overlay(Divider(), alignment: .bottom)
     }
 }
 

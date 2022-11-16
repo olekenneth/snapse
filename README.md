@@ -11,4 +11,4 @@ Contact me [https://matrix.to/#/@olekenneth:ablo.xyz](https://matrix.to/#/@oleke
 ## Screenshots
 
 
-![ChatsView](Screenshots/ChatsView.jpg)
+![ChatsView](Screenshots/ChatsView.png)
