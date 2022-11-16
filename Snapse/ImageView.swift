@@ -7,43 +7,88 @@
 
 import SwiftUI
 
+struct DeviceRotationViewModifier: ViewModifier {
+    let action: (UIDeviceOrientation) -> Void
+
+    func body(content: Content) -> some View {
+        content
+            .onAppear()
+            .onReceive(NotificationCenter.default.publisher(for: UIDevice.orientationDidChangeNotification)) { _ in
+                action(UIDevice.current.orientation)
+            }
+    }
+}
+
+// A View wrapper to make the modifier easier to use
+extension View {
+    func onRotate(perform action: @escaping (UIDeviceOrientation) -> Void) -> some View {
+        self.modifier(DeviceRotationViewModifier(action: action))
+    }
+}
+
 struct ImageView: View {
-    @State var image: UIImage? = nil
-    
+    @Binding var image: UIImage?
+    @State private var orientation = UIDeviceOrientation.unknown
+
     var body: some View {
         ZStack {
-            VStack(spacing: 20) {
+            VStack {
                 HStack {
                     Image(systemName: "trash.circle")
-                        .font(.system(size: 102))
+                        .font(.system(size: 40))
                         .foregroundColor(.white)
-                        .padding(.bottom)
+                        .padding(5)
+                        .background(.ultraThinMaterial)
+                        .clipShape(Circle())
                     Spacer()
-                }
+                }.padding()
                 Spacer()
                 HStack {
                     Spacer()
                     Image(systemName: "paperplane.circle.fill")
                         .font(.system(size: 50))
                         .foregroundColor(.blue)
-                        .padding(.top)
+                        .padding()
+                    Spacer().frame(width: 10)
+                }
+                .background(.ultraThinMaterial)
+            }
+
+            if image !== nil {
+                let image = Image(uiImage: image!)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .clipped()
+                    .layoutPriority(-1)
+                    .zIndex(-1)
+                
+                if orientation.isLandscape {
+                    image
+                        .rotationEffect(.degrees(90))
+                } else {
+                    image
                 }
             }
-            .scaledToFit()
-            
-            if image !== nil {
-                Image(uiImage: image!)
-                    .resizable()
-                    .scaledToFill()
-                    .zIndex(-1)
-                    .ignoresSafeArea(.all)
-            }
+        }
+        .ignoresSafeArea()
+        .edgesIgnoringSafeArea(.all)
+        .onRotate { newOrientation in
+            orientation = newOrientation
         }
     }
 }
 
+struct ImageViewWithImage: View {
+    @State private var image : UIImage? = UIImage(named: "DemoImage")
+    
+    var body: some View {
+        HStack { 
+            ImageView(image: $image)
+        }
+    }
+}
 struct ImageView_Previews: PreviewProvider {
     static var previews: some View {
-        ImageView(image: UIImage(named: "DemoImage"))
+        ImageViewWithImage()
     }
 }
