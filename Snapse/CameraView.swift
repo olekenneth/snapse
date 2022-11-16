@@ -15,7 +15,7 @@ struct CameraView: View {
     
     var body: some View {
         ZStack {
-            CameraViewBridge(cameraService: cameraService) { result in
+            CameraPreview(cameraService: cameraService) { result in
                 switch result {
                 case .success(let photo):
                     if let data = photo.fileDataRepresentation() {

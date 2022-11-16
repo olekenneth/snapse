@@ -8,3 +8,7 @@ Because lack of time, experience and all that. Please help me.
 
 Contact me [https://matrix.to/#/@olekenneth:ablo.xyz](https://matrix.to/#/@olekenneth:ablo.xyz)
 
+## Screenshots
+
+
+![ChatsView](Screenshots/ChatsView.jpg)

@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		4F4C3D8429241120007E522E /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C3D8329241120007E522E /* CameraView.swift */; };
 		4F4C3D862924113F007E522E /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C3D852924113F007E522E /* CameraService.swift */; };
-		4F4C3D8829241399007E522E /* CameraViewBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C3D8729241399007E522E /* CameraViewBridge.swift */; };
+		4F4C3D8829241399007E522E /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C3D8729241399007E522E /* CameraPreview.swift */; };
+		4F6F889B29250639007A8830 /* ChatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6F889A29250639007A8830 /* ChatsView.swift */; };
 		4FC6FA1C29229E3E000D5539 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC6FA1B29229E3E000D5539 /* ImageView.swift */; };
 		4FECC29429222206005482E4 /* SnapseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECC29329222206005482E4 /* SnapseApp.swift */; };
 		4FECC29629222206005482E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECC29529222206005482E4 /* ContentView.swift */; };
@@ -40,8 +41,9 @@
 /* Begin PBXFileReference section */
 		4F4C3D8329241120007E522E /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		4F4C3D852924113F007E522E /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
-		4F4C3D8729241399007E522E /* CameraViewBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewBridge.swift; sourceTree = "<group>"; };
+		4F4C3D8729241399007E522E /* CameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
 		4F4C3D89292425C9007E522E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4F6F889A29250639007A8830 /* ChatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsView.swift; sourceTree = "<group>"; };
 		4FC6FA1B29229E3E000D5539 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		4FECC29029222206005482E4 /* Snapse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snapse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FECC29329222206005482E4 /* SnapseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapseApp.swift; sourceTree = "<group>"; };
@@ -110,7 +112,8 @@
 				4FECC29329222206005482E4 /* SnapseApp.swift */,
 				4FECC29529222206005482E4 /* ContentView.swift */,
 				4F4C3D8329241120007E522E /* CameraView.swift */,
-				4F4C3D8729241399007E522E /* CameraViewBridge.swift */,
+				4F6F889A29250639007A8830 /* ChatsView.swift */,
+				4F4C3D8729241399007E522E /* CameraPreview.swift */,
 				4F4C3D852924113F007E522E /* CameraService.swift */,
 				4FECC29729222207005482E4 /* Assets.xcassets */,
 				4FC6FA1B29229E3E000D5539 /* ImageView.swift */,
@@ -277,7 +280,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F4C3D8829241399007E522E /* CameraViewBridge.swift in Sources */,
+				4F6F889B29250639007A8830 /* ChatsView.swift in Sources */,
+				4F4C3D8829241399007E522E /* CameraPreview.swift in Sources */,
 				4FC6FA1C29229E3E000D5539 /* ImageView.swift in Sources */,
 				4FECC29629222206005482E4 /* ContentView.swift in Sources */,
 				4F4C3D862924113F007E522E /* CameraService.swift in Sources */,

@@ -34,12 +34,9 @@ struct ImageView: View {
         ZStack {
             VStack {
                 HStack {
-                    Image(systemName: "trash.circle")
-                        .font(.system(size: 40))
+                    Image(systemName: "xmark")
+                        .font(.system(size: 32))
                         .foregroundColor(.white)
-                        .padding(5)
-                        .background(.ultraThinMaterial)
-                        .clipShape(Circle())
                     Spacer()
                 }.padding()
                 Spacer()
@@ -47,7 +44,7 @@ struct ImageView: View {
                     Spacer()
                     Image(systemName: "paperplane.circle.fill")
                         .font(.system(size: 50))
-                        .foregroundColor(.blue)
+                        .foregroundColor(.teal)
                         .padding()
                     Spacer().frame(width: 10)
                 }
