@@ -10,7 +10,11 @@ fileGroups:
     - README.md
     - project.yml
 
+settings:
+  DEVELOPMENT_TEAM: ${DEVELOPMENT_TEAM}
+    
 options:
+  bundleIdPrefix: com.adapptic
   defaultConfig: Release
   groupSortPosition: bottom
   transitivelyLinkDependencies: false

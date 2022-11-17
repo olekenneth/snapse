@@ -27,18 +27,25 @@ schemes:
 
 targets:
   Snapse:
+    info:
+      path: Info.plist
+      properties:
+        NSMicrophoneUsageDescription: "Need access to microphone"
+        NSCameraUsageDescription: "Need access to camera"
+
     type: application
     platform: iOS
+    
 
     preBuildScripts:
     - name: ⚠️ SwiftLint
       runOnlyWhenInstalling: false
       shell: /bin/sh
-      script: "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n"
+      script: "\"swiftlint\"\n"
     - name: 🛠 SwiftGen
       runOnlyWhenInstalling: false
       shell: /bin/sh
-      script: "\"${PODS_ROOT}/SwiftGen/bin/swiftgen\" config run --config \"Tools/SwiftGen/swiftgen-config.yml\"\n"
+      script: "\"swiftgen\" config run --config \"swiftgen.yml\"\n"
 
     sources:
     - path: .
