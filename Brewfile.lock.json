@@ -88,6 +88,25 @@
             }
           }
         }
+      },
+      "swiftgen": {
+        "version": "6.6.2",
+        "bottle": {
+          "rebuild": 0,
+          "root_url": "https://ghcr.io/v2/homebrew/core",
+          "files": {
+            "arm64_monterey": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/swiftgen/blobs/sha256:22d90e985b8a6ab49311800eeb7ab721f4872bc85a60b44b7ad57954453569c8",
+              "sha256": "22d90e985b8a6ab49311800eeb7ab721f4872bc85a60b44b7ad57954453569c8"
+            },
+            "monterey": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/swiftgen/blobs/sha256:3c158aecb7ced0c489ef11f6a4c15a9d1449a40ad554388a0310116f510ec316",
+              "sha256": "3c158aecb7ced0c489ef11f6a4c15a9d1449a40ad554388a0310116f510ec316"
+            }
+          }
+        }
       }
     }
   },
@@ -100,6 +119,14 @@
         "CLT": "",
         "Xcode": "14.1",
         "macOS": "12.5.1"
+      },
+      "ventura": {
+        "HOMEBREW_VERSION": "3.6.11",
+        "HOMEBREW_PREFIX": "/usr/local",
+        "Homebrew/homebrew-core": "d9f631b8f64413eb4538d91dbe1e960affe62fec",
+        "CLT": "14.1.0.0.1.1666437224",
+        "Xcode": "14.1",
+        "macOS": "13.1"
       }
     }
   }
