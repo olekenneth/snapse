@@ -10,11 +10,17 @@ Contact me [https://matrix.to/#/@olekenneth:ablo.xyz](https://matrix.to/#/@oleke
 
 ## Getting started
 
-`brew bundle`
+```
+brew bundle
+```
 
-`xcodegen generate`
+```
+DEVELOPMENT_TEAM=__YOUR TEAM__ xcodegen generate
+```
 
-`open Snapse.xcodeproj`
+```
+open Snapse.xcodeproj
+```
 
 ## Screenshots
 
