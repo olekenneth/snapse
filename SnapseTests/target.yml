@@ -1,0 +1,53 @@
+name: SnapseTests
+
+schemes:
+  SnapseTests:
+    analyze:
+      config: Debug
+    archive:
+      config: Release
+    build:
+      targets:
+        SnapseTests:
+        - running
+        - testing
+        - profiling
+        - analyzing
+        - archiving
+    profile:
+      config: Release
+    run:
+      config: Debug
+      disableMainThreadChecker: true
+    test:
+      config: Debug
+      disableMainThreadChecker: true
+      targets:
+      - SnapseTests
+
+targets:
+  SnapseTests:
+    type: bundle.unit-test
+    platform: iOS
+
+    dependencies:
+    - target: Snapse
+
+    settings:
+      base:
+        BUNDLE_LOADER: $(TEST_HOST)
+        FRAMEWORK_SEARCH_PATHS: $(SDKROOT)/Developer/Library/Frameworks $(inherited)
+        INFOPLIST_FILE: SnapseTests/Info.plist
+        LD_RUNPATH_SEARCH_PATHS: $(inherited) @executable_path/Frameworks @loader_path/Frameworks
+        PRODUCT_BUNDLE_IDENTIFIER: org.matrix.$(PRODUCT_NAME:rfc1034identifier)
+        PRODUCT_NAME: SnapseTests
+        SWIFT_OBJC_BRIDGING_HEADER: SnapseTests/SnapseTests-Bridging-Header.h
+        TEST_HOST: $(BUILT_PRODUCTS_DIR)/Snapse.app/Snapse
+      configs:
+        Debug:
+        Release:
+          PROVISIONING_PROFILE: $(SNAPSE_PROVISIONING_PROFILE)
+          PROVISIONING_PROFILE_SPECIFIER: $(SNAPSE_PROVISIONING_PROFILE_SPECIFIER)
+
+    sources:
+    - path: .

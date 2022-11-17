@@ -1,0 +1,45 @@
+name: Snapse
+
+schemes:
+  Snapse:
+    analyze:
+      config: Debug
+    archive:
+      config: Release
+    build:
+      targets:
+        Snapse:
+        - running
+        - testing
+        - profiling
+        - analyzing
+        - archiving
+    profile:
+      config: Release
+    run:
+      config: Debug
+      disableMainThreadChecker: true
+    test:
+      config: Debug
+      disableMainThreadChecker: true
+      targets:
+      - SnapseTests
+
+targets:
+  Snapse:
+    type: application
+    platform: iOS
+
+    preBuildScripts:
+    - name: ⚠️ SwiftLint
+      runOnlyWhenInstalling: false
+      shell: /bin/sh
+      script: "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n"
+    - name: 🛠 SwiftGen
+      runOnlyWhenInstalling: false
+      shell: /bin/sh
+      script: "\"${PODS_ROOT}/SwiftGen/bin/swiftgen\" config run --config \"Tools/SwiftGen/swiftgen-config.yml\"\n"
+
+    sources:
+    - path: .
+
