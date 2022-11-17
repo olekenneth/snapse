@@ -76,7 +76,7 @@ struct ImageView: View {
 }
 
 struct ImageViewWithImage: View {
-    @State private var image : UIImage? = UIImage(named: "DemoImage")
+    @State private var image : UIImage? = UIImage(asset: Asset.demoImage)
     
     var body: some View {
         HStack { 
