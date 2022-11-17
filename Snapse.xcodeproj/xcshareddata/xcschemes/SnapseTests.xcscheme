@@ -15,9 +15,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "561AC83D4D1E4D5D0C483D62"
-               BuildableName = "Snapse.app"
-               BlueprintName = "Snapse"
+               BlueprintIdentifier = "A7A4AA09E7798B97D3E17A3D"
+               BuildableName = "SnapseTests.xctest"
+               BlueprintName = "SnapseTests"
                ReferencedContainer = "container:Snapse.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,9 +33,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "561AC83D4D1E4D5D0C483D62"
-            BuildableName = "Snapse.app"
-            BlueprintName = "Snapse"
+            BlueprintIdentifier = "A7A4AA09E7798B97D3E17A3D"
+            BuildableName = "SnapseTests.xctest"
+            BlueprintName = "SnapseTests"
             ReferencedContainer = "container:Snapse.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -65,16 +65,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "561AC83D4D1E4D5D0C483D62"
-            BuildableName = "Snapse.app"
-            BlueprintName = "Snapse"
+            BlueprintIdentifier = "A7A4AA09E7798B97D3E17A3D"
+            BuildableName = "SnapseTests.xctest"
+            BlueprintName = "SnapseTests"
             ReferencedContainer = "container:Snapse.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <CommandLineArguments>
       </CommandLineArguments>
    </LaunchAction>
@@ -84,18 +83,17 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "561AC83D4D1E4D5D0C483D62"
-            BuildableName = "Snapse.app"
-            BlueprintName = "Snapse"
-            ReferencedContainer = "container:Snapse.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
       <CommandLineArguments>
       </CommandLineArguments>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "A7A4AA09E7798B97D3E17A3D"
+            BuildableName = "SnapseTests.xctest"
+            BlueprintName = "SnapseTests"
+            ReferencedContainer = "container:Snapse.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
