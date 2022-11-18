@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct CameraView: View {
-    
+
     let cameraService = CameraService()
     @State var capturedImage: UIImage?
     @State private var isImageCaptured = false
-    
+
     var body: some View {
         ZStack {
             CameraPreview(cameraService: cameraService) { result in
@@ -28,7 +28,7 @@ struct CameraView: View {
                     print(err.localizedDescription)
                 }
             }
-            
+
             VStack {
                 Spacer()
                 Button(action: {

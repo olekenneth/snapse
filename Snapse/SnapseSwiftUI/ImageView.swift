@@ -58,7 +58,7 @@ struct ImageView: View {
                     .clipped()
                     .layoutPriority(-1)
                     .zIndex(-1)
-                
+
                 if orientation.isLandscape {
                     image
                         .rotationEffect(.degrees(90))
@@ -76,10 +76,10 @@ struct ImageView: View {
 }
 
 struct ImageViewWithImage: View {
-    @State private var image : UIImage? = UIImage(asset: Asset.demoImage)
-    
+    @State private var image: UIImage? = UIImage(asset: Asset.demoImage)
+
     var body: some View {
-        HStack { 
+        HStack {
             ImageView(image: $image)
         }
     }
