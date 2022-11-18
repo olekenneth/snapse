@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RoomModel:Identifiable {
+struct RoomModel: Identifiable {
     let id = UUID()
     var name: String
     var unread: Bool
@@ -46,11 +46,11 @@ struct ChatsView: View {
         RoomModel(name: "One Friend", unread: true),
         RoomModel(name: "Other Friend", unread: false)
     ]
-    
+
     var body: some View {
         ScrollView {
             VStack {
-                ForEach (rooms) { room in
+                ForEach(rooms) { room in
                     Room(room: room)
                 }
             }
@@ -60,7 +60,7 @@ struct ChatsView: View {
 
 struct Room: View {
     var room: RoomModel
-    
+
     var body: some View {
         HStack(alignment: .top, spacing: 10) {
             Rectangle()

@@ -1,0 +1,27 @@
+name: Snapse
+attributes:
+  ORGANIZATIONNAME: com.adapptic.snapse
+
+configs:
+  Debug: debug
+  Release: release
+
+fileGroups:
+    - README.md
+    - project.yml
+
+settings:
+  DEVELOPMENT_TEAM: ${DEVELOPMENT_TEAM}
+    
+options:
+  bundleIdPrefix: com.adapptic
+  defaultConfig: Release
+  groupSortPosition: bottom
+  transitivelyLinkDependencies: false
+  createIntermediateGroups: true
+  useBaseInternationalization: true
+    
+include:
+  - path: Snapse/target.yml
+  - path: SnapseTests/target.yml
+

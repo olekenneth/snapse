@@ -1,0 +1,53 @@
+name: Snapse
+
+schemes:
+  Snapse:
+    analyze:
+      config: Debug
+    archive:
+      config: Release
+    build:
+      targets:
+        Snapse:
+        - running
+        - testing
+        - profiling
+        - analyzing
+        - archiving
+    profile:
+      config: Release
+    run:
+      config: Debug
+      disableMainThreadChecker: true
+    test:
+      config: Debug
+      disableMainThreadChecker: true
+      targets:
+      - SnapseTests
+
+targets:
+  Snapse:
+    info:
+      path: Info.plist
+      properties:
+        NSMicrophoneUsageDescription: "Need access to microphone"
+        NSCameraUsageDescription: "Need access to camera"
+        UILaunchStoryboardName: "Launch Screen.storyboard"
+
+    type: application
+    platform: iOS
+    
+
+    preBuildScripts:
+    - name: ⚠️ SwiftLint
+      runOnlyWhenInstalling: false
+      shell: /bin/sh
+      script: "\"swiftlint\"\n"
+    - name: 🛠 SwiftGen
+      runOnlyWhenInstalling: false
+      shell: /bin/sh
+      script: "\"swiftgen\" config run --config \"swiftgen.yml\"\n"
+
+    sources:
+    - path: .
+

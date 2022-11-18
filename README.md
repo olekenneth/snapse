@@ -8,6 +8,20 @@ Because lack of time, experience and all that. Please help me.
 
 Contact me [https://matrix.to/#/@olekenneth:ablo.xyz](https://matrix.to/#/@olekenneth:ablo.xyz)
 
+## Getting started
+
+```
+brew bundle
+```
+
+```
+DEVELOPMENT_TEAM=__YOUR TEAM__ xcodegen generate
+```
+
+```
+open Snapse.xcodeproj
+```
+
 ## Screenshots
 
 
